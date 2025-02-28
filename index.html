@@ -18,6 +18,12 @@
         .poppins{
             font-family: "Poppins";
         }
+        .card-bg{
+            background-color: #F4F7FF;
+        }
+        .sc-bg{
+            background: linear-gradient(130.70deg, rgb(55, 82, 253) 0.419%,rgb(108, 127, 250) 52.66%,rgb(155, 168, 248) 99.733%);
+        }
     </style>
 
 
@@ -25,8 +31,8 @@
 <body class="poppins px-36 pb-16">
 
     <header>
-        <nav class="drop-shadow-md ">
-            <div class="navbar bg-base-100 rounded-lg">
+        <nav class="drop-shadow-md my-6">
+            <div class="navbar bg-base-100 rounded-lg px-6 py-2">
                 <div class="flex-1 gap-1">
                     <img src="./assets/logo.png" alt="Logo">
                   <h1 class="text-4xl">Dev<span class="font-bold">Board</span></h1>
@@ -41,6 +47,56 @@
               </div>
         </nav>
     </header>
+
+
+    <main>
+        <!--big Section-->
+        <section>
+            <!-- 1st section -->
+            <section class="flex gap-6 ">
+                <div class="flex items-center gap-3 card-bg rounded-lg justify-center p-6">
+                    <img src="./assets/checkbox.png" alt="check Box" class="w-6">
+                    <div>
+                        <p class="text-base">Task Assigned</p>
+                        <h2 class="text-3xl font-bold">05</h2>
+                    </div>
+                </div>
+                <div class="flex sc-bg items-center gap-3 rounded-lg justify-center p-6">
+                    <img src="./assets/board.png" alt="board PNG" class="w-20">
+                    <p class="text-2xl">Discover Something New Today!</p>
+                </div>
+                <div class="flex card-bg items-center gap-3 rounded-lg justify-center p-6">
+                    <img src="./assets/calender.png" alt="board PNG" class="w-">
+                    <p class="text-2xl">Wed, Jul 28 2025</p>
+                </div>
+            </section>
+
+            <!-- Card Section -->
+             <section>
+                <!-- Card-1-->
+                 <div class="card-bg p-4 rounded-lg mt-6">
+                     <p class="rounded-xl bg-white p-3 w-20 ">ShopEase</p>
+                     <h1>Fix Mobile Button Issue</h1>
+                     <p>Debug using Chrome DevTools, check for overlapping</p>
+                     <div>
+                        <div>
+                            <p>Deadline</p>
+                            <h2>21 March 2025</h2>
+                        </div>
+                        <button> Completed </button>
+                     </div>
+
+                 </div>
+
+             </section>
+
+        </section>
+
+        <!-- Small Section-->
+        <section>
+
+        </section>
+    </main>
     
 </body>
 </html>
