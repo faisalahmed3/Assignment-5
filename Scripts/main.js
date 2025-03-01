@@ -45,3 +45,74 @@ document.getElementById('date-display').textContent = formattedDate;
 
 
 
+
+let totalTasks = 6; 
+let completedTasks = 0;  
+
+
+function updateTaskCounts() {
+    const assignedTasks = document.getElementById('assigned-tasks');
+    const completedTasksElement = document.getElementById('count');
+    
+    let assignedCount = parseInt(assignedTasks.innerText);
+    let completedCount = parseInt(completedTasksElement.innerText);
+    
+    if (assignedTasks && completedTasksElement) {    
+        assignedTasks.innerText = assignedCount - 1;
+        completedTasksElement.innerText = completedCount + 1;
+    }
+}
+
+
+function handleTaskCompletion(button, taskName) {
+    
+    button.disabled = true;
+    button.style.backgroundColor = 'grey';  
+
+    
+    alert(`Congratulations! You have completed the task: "${taskName}" successfully.`);
+
+    
+    const activityLog = document.getElementById('activity-log');
+    const pTag = document.createElement('p');
+    const currentTime = new Date().toLocaleTimeString();  // Get the current time
+
+    
+    pTag.textContent = `You have completed the task: "${taskName}" at ${currentTime}`;
+    
+    pTag.classList.add('card-bg', 'p-4','mt-4','font-bold','rounded-lg');
+    
+    activityLog.appendChild(pTag);
+
+    updateTaskCounts();
+
+    completedTasks++;
+
+    if (completedTasks === totalTasks) {
+        alert("Congratulations! You have successfully completed all the tasks.");
+    }
+}
+
+document.getElementById('complete-btn-1').addEventListener('click', function() {
+    handleTaskCompletion(this, 'Fix Mobile Button Issue');
+})
+
+document.getElementById('complete-btn-2').addEventListener('click', function() {
+    handleTaskCompletion(this, 'Add Dark Mode');
+})
+
+document.getElementById('complete-btn-3').addEventListener('click', function() {
+    handleTaskCompletion(this, 'Optimize Home page');
+})
+
+document.getElementById('complete-btn-4').addEventListener('click', function() {
+    handleTaskCompletion(this, 'Update Footer Layout');
+})
+
+document.getElementById('complete-btn-5').addEventListener('click', function() {
+    handleTaskCompletion(this, 'Fix Navigation Bar');
+})
+document.getElementById('complete-btn-6').addEventListener('click', function() {
+    handleTaskCompletion(this, 'Fix Navigation Bar');
+})
+
