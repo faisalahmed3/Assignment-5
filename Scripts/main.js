@@ -30,3 +30,18 @@ themeBtn.addEventListener("click", function() {
     localStorage.setItem("theme", randomColor);      
 })
 
+// Get the current date
+const currentDate = new Date();
+
+
+const formattedDate = currentDate.toLocaleDateString('en-US', {
+  weekday: 'short',  
+  month: 'short',   
+  day: 'numeric',  
+  year: 'numeric'   
+})
+
+document.getElementById('date-display').textContent = formattedDate;
+
+
+
