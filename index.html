@@ -27,6 +27,9 @@
         .cbtn-bg{
             background-color: #3752FD;
         }
+        .custom-hover:hover{
+            background-color: #3752FD;
+        }
     </style>
 
 
@@ -34,8 +37,9 @@
 <body class="poppins px-36 pb-16">
 
     <header>
+
         <nav class="drop-shadow-md my-6">
-            <div class="navbar bg-base-100 rounded-lg px-6 py-2">
+            <div class="navbar bg-base-100 rounded-lg px-6 py-3">
                 <div class="flex-1 gap-1">
                     <img src="./assets/logo.png" alt="Logo">
                   <h1 class="text-4xl">Dev<span class="font-bold">Board</span></h1>
@@ -55,7 +59,7 @@
     <main>
         <section class=" flex gap-6">
             <!--big Section-->
-            <section class="bg-white p-3 shadow-lg rounded-lg w-5/7 ">
+            <section class="bg-white p-6 shadow-lg rounded-lg w-5/7 ">
                 <!-- 1st section -->
                 <section class="grid grid-cols-4 gap-6">
                     <div class="flex items-center gap-3 card-bg rounded-lg justify-center p-6 ">
@@ -65,9 +69,9 @@
                             <h2 class="text-3xl font-bold">05</h2>
                         </div>
                     </div>
-                    <div class="flex sc-bg items-center gap-3 rounded-lg justify-center p-6 col-span-2">
+                    <div class="btn h-auto flex sc-bg items-center gap-3 rounded-lg justify-center p-6 col-span-2">
                         <img src="./assets/board.png" alt="board PNG" class="w-20">
-                        <p class="text-2xl">Discover Something New Today!</p>
+                        <p class="text-2xl text-white">Discover Something New Today!</p>
                     </div>
                     <div class="flex card-bg items-center gap-3 rounded-lg justify-center p-6 ">
                         <img src="./assets/calender.png" alt="board PNG" >
@@ -76,7 +80,7 @@
                 </section>
 
                 <!-- Card Section -->
-                <section class="grid grid-cols-3 gap-6 mx-auto justify-center mt-6 mb-3">
+                <section class="grid grid-cols-3 gap-6 mx-auto justify-center mt-6 ">
                     <!-- Card-1-->
                     <div class="card-bg p-4 rounded-lg w-auto ">
                         <p class="rounded-xl bg-white p-3 w-28 flex justify-center">ShopEase</p>
@@ -87,7 +91,7 @@
                                 <p class="text-sm">Deadline</p>
                                 <h2 class="font-medium">21 March 2025</h2>
                             </div>
-                            <button class="btn p-3 font-medium rounded-xl mx-auto text-white cbtn-bg"> Completed </button>
+                            <button class="btn p-3 font-medium rounded-xl mx-auto text-white cbtn-bg custom-hover"> Completed </button>
                         </div>
                     </div>
 
@@ -101,7 +105,7 @@
                             <p class="text-sm">Deadline</p>
                             <h2 class="font-medium">21 March 2025</h2>
                         </div>
-                        <button class="btn p-3 font-medium rounded-xl mx-auto text-white cbtn-bg"> Completed </button>
+                        <button class="btn p-3 font-medium rounded-xl mx-auto text-white cbtn-bg custom-hover"> Completed </button>
                         </div>
                     </div>
 
@@ -116,7 +120,7 @@
                             <p class="text-sm">Deadline</p>
                             <h2 class="font-medium">21 March 2025</h2>
                         </div>
-                        <button class="btn p-3 font-medium rounded-xl mx-auto text-white cbtn-bg"> Completed </button>
+                        <button class="btn p-3 font-medium rounded-xl mx-auto text-white cbtn-bg custom-hover"> Completed </button>
                         </div>
                     </div>
 
@@ -130,7 +134,7 @@
                             <p class="text-sm">Deadline</p>
                             <h2 class="font-medium">21 March 2025</h2>
                         </div>
-                        <button class="btn p-3 font-medium rounded-xl mx-auto text-white cbtn-bg"> Completed </button>
+                        <button class="btn p-3 font-medium rounded-xl mx-auto text-white cbtn-bg custom-hover"> Completed </button>
                         </div>
                     </div>
 
@@ -144,14 +148,14 @@
                             <p class="text-sm">Deadline</p>
                             <h2 class="font-medium">21 March 2025</h2>
                         </div>
-                        <button class="btn p-3 font-medium rounded-xl mx-auto text-white cbtn-bg"> Completed </button>
+                        <button class="btn p-3 font-medium rounded-xl mx-auto text-white cbtn-bg custom-hover"> Completed </button>
                         </div>
                     </div>
 
                     <!-- Card-6 -->
 
                     <div class="card-bg p-4 rounded-lg w-auto ">
-                        <p class="rounded-xl bg-white p-3 w-28 flex justify-center">Glassdoar</p>
+                        <p class="rounded-xl bg-white p-3 w-28 flex justify-center custom-hover">Glassdoar</p>
                         <h1 class="font-medium text-2xl mt-3">Improve Job searching </h1>
                         <p class="rounded-xl bg-white p-3 flex justify-center mt-3 ">Debug using Chrome DevTools, check for overlapping</p>
                         <div class="flex mt-5">
@@ -159,7 +163,7 @@
                             <p class="text-sm">Deadline</p>
                             <h2 class="font-medium">21 March 2025</h2>
                         </div>
-                        <button class="btn p-3 font-medium rounded-xl mx-auto text-white cbtn-bg"> Completed </button>
+                        <button class="btn p-3 font-medium rounded-xl mx-auto text-white cbtn-bg custom-hover"> Completed </button>
                         </div>
                     </div>
 
@@ -169,15 +173,17 @@
             </section>
 
             <!-- Small Section-->
-            <section class="bg-white p-3 shadow-lg rounded-lg w-2/6">
-                <div class=" flex gap-5">
-                    <img src="./assets/activity.png" alt="">
+            <section class="bg-white p-5 pt-14 shadow-lg rounded-lg w-2/6 ">
+                <div class=" flex gap-3 justify-center">
+                    <img src="./assets/activity.png" alt="" class="w-6">
                     <h1 class="text-xl font-medium">Activity Log</h1>
-                    </div>
-                    <button class="btn p-3 font-medium rounded-xl mx-auto text-white cbtn-bg"> Clear History</button>
-                    <div>
+                </div>
+                <div class="flex justify-center my-6">
+                    <button class="btn p-3 font-medium rounded-xl mx-auto text-white cbtn-bg custom-hover"> Clear History</button>
+                </div>
+                <div>
 
-                    </div>
+                </div>
 
             </section>
         </section>
