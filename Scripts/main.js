@@ -44,7 +44,7 @@ const formattedDate = currentDate.toLocaleDateString('en-US', {
 document.getElementById('date-display').textContent = formattedDate;
 
 
-
+//All functionalities of complete buttons
 
 let totalTasks = 6; 
 let completedTasks = 0;  
@@ -115,4 +115,19 @@ document.getElementById('complete-btn-5').addEventListener('click', function() {
 document.getElementById('complete-btn-6').addEventListener('click', function() {
     handleTaskCompletion(this, 'Fix Navigation Bar');
 })
+
+
+//clear history button
+
+function clearActivityLog() {
+    const activityLog = document.getElementById('activity-log');
+    
+    activityLog.innerHTML = '';
+    alert("Activity log has been cleared successfully!");
+}
+
+document.getElementById('clear-history-btn').addEventListener('click', function(){
+    clearActivityLog();
+})
+
 
