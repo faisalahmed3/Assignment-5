@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+
+    <!-- DaisyUI & Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        .poppins{
+            font-family: "Poppins";
+        }
+        .card-bg{
+            background-color: #F4F7FF;
+        }
+        .sc-bg{
+            background: linear-gradient(130.70deg, rgb(55, 82, 253) 0.419%,rgb(108, 127, 250) 52.66%,rgb(155, 168, 248) 99.733%);
+        }
+        .cbtn-bg{
+            background-color: #3752FD;
+        }
+        .custom-hover:hover{
+            background-color: #3752FD;
+        }
+    </style>
+
+
+</head>
+<body class="poppins px-36 pb-16">
+    <header>
+        <nav class="drop-shadow-md my-6">
+            <div class="navbar bg-base-100 rounded-lg px-6 py-3">
+                <div class="flex-1 gap-1">
+                    <img src="./assets/logo.png" alt="Logo">
+                  <h1 class="text-4xl">Dev<span class="font-bold">Board</span></h1>
+                </div>
+                <div class="flex-none gap-7">
+                  <button class="btn cbtn-bg custom-hover text-2xl text-white"> Back to Desk</button>
+                </div>
+              </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="flex justify-center my-6">
+            <h1 class="text-4xl font-bold"> Blogs </h1>
+        </section>
+
+        <!--Question part-->
+        <section>
+            <!-- Question-1 -->
+             <div class=" bg-white shadow-md rounded-lg my-6">
+                <h1 class="text-3xl font-bold border-b-2 p-4">Question-1: What are the different ways to select an element in the DOM?</h1>
+
+                <p class="text-xl px-20 py-3">
+                    1. By ID (getElementById) <br>
+                    2. By Class (getElementsByClassName) <br>
+                    3. By Tag Name (getElementsByTagName) <br>
+                    4. By Name (getElementsByName) <br>
+                    5. Using querySelector (CSS Selector) <br>
+                    6. Using querySelectorAll (CSS Selector) <br>
+                </p>
+             </div>
+
+             <!-- Question-2 -->
+             <div class=" bg-white shadow-md rounded-lg my-6">
+                <h1 class="text-3xl font-bold border-b-2 p-4">Question-2: What is the difference between innerHTML, innerText, and textContent?</h1>
+
+                <p class="text-xl px-20 py-3">
+                    The difference between "innerHTML", "innerText", and "textContent" lies in how they handle text and HTML. "innerHTML" retrieves or sets HTML content, including tags, making it useful for dynamic updates but risky for XSS attacks. "innerText" only gets or sets visible text, ignoring hidden elements and formatting. "textContent" retrieves all text, including hidden content, but treats everything as plain text, making it faster than "innerHTML". Use "innerHTML" for handling HTML, "innerText" for visible content, and "textContent" for efficient text extraction.
+                </p>
+             </div>
+
+             <!-- Question-3 -->
+             <div class=" bg-white shadow-md rounded-lg my-6">
+                <h1 class="text-3xl font-bold border-b-2 p-4">Question-3: What is event delegation in the DOM?</h1>
+
+                <p class="text-xl px-20 py-3">
+                    Event delegation in the DOM is a technique where a single event listener is added to a parent element instead of multiple child elements. This works due to event bubbling, where an event triggered on a child propagates up to its ancestors. Using "event.target", we can identify which child element triggered the event and handle it accordingly. This approach improves performance by reducing the number of event listeners, simplifies code maintenance, and allows handling dynamically added elements without manually attaching new event listeners. It is commonly used in scenarios like handling clicks on lists, forms, or dynamically loaded content efficiently.
+                </p>
+             </div>
+
+             <!-- Question-4 -->
+             <div class=" bg-white shadow-md rounded-lg my-6">
+                <h1 class="text-3xl font-bold border-b-2 p-4">Question-4: What is event bubbling in the DOM?</h1>
+
+                <p class="text-xl px-20 py-3">
+                    Event bubbling in the DOM is when an event on a child element propagates up through its parent elements. For example, a click on a button inside a "div" triggers the event on the button first, then on the "div", and continues up to "body" and beyond. This allows event delegation but can cause unintended behavior if multiple elements handle the same event. Bubbling can be stopped using `event.stopPropagation()`.
+                </p>
+             </div>
+
+              <!-- Question-5 -->
+              <div class=" bg-white shadow-md rounded-lg my-6">
+                <h1 class="text-3xl font-bold border-b-2 p-4">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+
+                <p class="text-xl px-20 py-3">
+                    In JavaScript, you can create, add, and remove elements dynamically using various methods. To create an element, use "document.createElement()", which generates a new element that can be modified before adding it to the DOM. Adding an element can be done with methods like "appendChild()", which places the element as the last child,"prepend()", which inserts it as the first child, and "insertBefore()", which places it before a specified element. To remove elements, "removeChild()" can be used to delete a child from its parent, while "remove()" directly removes an element from the DOM. These methods allow efficient manipulation of web pages, making them interactive and dynamic.
+                </p>
+             </div>
+        </section>
+
+    </main>
+    
+</body>
+</html>
