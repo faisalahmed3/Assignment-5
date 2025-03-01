@@ -30,6 +30,7 @@
         .custom-hover:hover{
             background-color: #3752FD;
         }
+
     </style>
 
 
@@ -38,7 +39,7 @@
 
     <header>
 
-        <nav class="drop-shadow-md my-6">
+        <nav class="drop-shadow-md mb-6">
             <div class="navbar bg-base-100 rounded-lg px-6 py-3">
                 <div class="flex-1 gap-1">
                     <img src="./assets/logo.png" alt="Logo">
@@ -47,9 +48,9 @@
                 <div class="flex-none gap-7">
                   <div class="flex items-center gap-2">
                     <img src="./assets/checkbox.png" alt="Check Box">
-                    <h2 class="text-3xl font-bold">23</h2>
+                    <h2 class="text-3xl font-bold" id="count">23</h2>
                   </div>
-                  <button><img src="./assets/theme-btn.png" alt="theme button image"></button>
+                  <button id="theme-btn"><img src="./assets/theme-btn.png" alt="theme button image"></button>
                 </div>
               </div>
         </nav>
@@ -57,7 +58,7 @@
 
 
     <main>
-        <section class=" flex gap-6">
+        <section class=" flex gap-6 ">
             <!--big Section-->
             <section class="bg-white p-6 shadow-lg rounded-lg w-5/7 ">
                 <!-- 1st section -->
@@ -66,16 +67,16 @@
                         <img src="./assets/checkbox.png" alt="check Box" class="w-6">
                         <div>
                             <p class="text-base">Task Assigned</p>
-                            <h2 class="text-3xl font-bold">05</h2>
+                            <h2 class="text-3xl font-bold" id="assigned-tasks">06</h2>
                         </div>
                     </div>
-                    <div class="btn h-auto flex sc-bg items-center gap-3 rounded-lg justify-center p-6 col-span-2">
+                    <div id="discover-btn" class="btn h-auto flex sc-bg items-center gap-3 rounded-lg justify-center p-6 col-span-2">
                         <img src="./assets/board.png" alt="board PNG" class="w-20">
                         <p class="text-2xl text-white">Discover Something New Today!</p>
                     </div>
                     <div class="flex card-bg items-center gap-3 rounded-lg justify-center p-6 ">
                         <img src="./assets/calender.png" alt="board PNG" >
-                        <p class="text-2xl">Wed, Jul 28 2025</p>
+                        <p class="text-2xl" id="date-display">Wed, Jul 28 2025</p>
                     </div>
                 </section>
 
@@ -91,7 +92,7 @@
                                 <p class="text-sm">Deadline</p>
                                 <h2 class="font-medium">21 March 2025</h2>
                             </div>
-                            <button class="btn p-3 font-medium rounded-xl mx-auto text-white cbtn-bg custom-hover"> Completed </button>
+                            <button class="btn p-3 font-medium rounded-xl mx-auto text-white cbtn-bg custom-hover " id="complete-btn-1"> Completed </button>
                         </div>
                     </div>
 
@@ -105,7 +106,7 @@
                             <p class="text-sm">Deadline</p>
                             <h2 class="font-medium">21 March 2025</h2>
                         </div>
-                        <button class="btn p-3 font-medium rounded-xl mx-auto text-white cbtn-bg custom-hover"> Completed </button>
+                        <button class="btn p-3 font-medium rounded-xl mx-auto text-white cbtn-bg custom-hover" id="complete-btn-2"> Completed </button>
                         </div>
                     </div>
 
@@ -120,7 +121,7 @@
                             <p class="text-sm">Deadline</p>
                             <h2 class="font-medium">21 March 2025</h2>
                         </div>
-                        <button class="btn p-3 font-medium rounded-xl mx-auto text-white cbtn-bg custom-hover"> Completed </button>
+                        <button class="btn p-3 font-medium rounded-xl mx-auto text-white cbtn-bg custom-hover" id="complete-btn-3"> Completed </button>
                         </div>
                     </div>
 
@@ -134,7 +135,7 @@
                             <p class="text-sm">Deadline</p>
                             <h2 class="font-medium">21 March 2025</h2>
                         </div>
-                        <button class="btn p-3 font-medium rounded-xl mx-auto text-white cbtn-bg custom-hover"> Completed </button>
+                        <button class="btn p-3 font-medium rounded-xl mx-auto text-white cbtn-bg custom-hover" id="complete-btn-4"> Completed </button>
                         </div>
                     </div>
 
@@ -148,7 +149,7 @@
                             <p class="text-sm">Deadline</p>
                             <h2 class="font-medium">21 March 2025</h2>
                         </div>
-                        <button class="btn p-3 font-medium rounded-xl mx-auto text-white cbtn-bg custom-hover"> Completed </button>
+                        <button class="btn p-3 font-medium rounded-xl mx-auto text-white cbtn-bg custom-hover" id="complete-btn-5"> Completed </button>
                         </div>
                     </div>
 
@@ -163,7 +164,7 @@
                             <p class="text-sm">Deadline</p>
                             <h2 class="font-medium">21 March 2025</h2>
                         </div>
-                        <button class="btn p-3 font-medium rounded-xl mx-auto text-white cbtn-bg custom-hover"> Completed </button>
+                        <button class="btn p-3 font-medium rounded-xl mx-auto text-white cbtn-bg custom-hover" id="complete-btn-6"> Completed </button>
                         </div>
                     </div>
 
@@ -181,13 +182,17 @@
                 <div class="flex justify-center my-6">
                     <button class="btn p-3 font-medium rounded-xl mx-auto text-white cbtn-bg custom-hover"> Clear History</button>
                 </div>
-                <div>
+                <div id="activity-log">
 
                 </div>
 
             </section>
         </section>
     </main>
+    
+    <script src="./Scripts/main.js"></script>
+
+    
     
 </body>
 </html>
