@@ -68,7 +68,7 @@ function handleTaskCompletion(button, taskName) {
     
     button.disabled = true;
     button.style.backgroundColor = 'grey';  
-
+    button.style.color='white';
     
     alert(`Congratulations! You have completed the task: "${taskName}" successfully.`);
 
